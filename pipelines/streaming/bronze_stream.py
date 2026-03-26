@@ -12,11 +12,12 @@ schema = StructType() \
     .add("transaction_id", StringType()) \
     .add("user_id", StringType())
 
+BASE_PATH = "/Volumes/workspace/default"
 bronze_stream = spark.readStream \
     .format("json") \
     .schema(schema) \
     .option("maxFilesPerTrigger", 1) \
-    .load("/Volumes/workspace/default/stream/")
+    .load(f"{BASE_PATH}/stream/")
 
 # COMMAND ----------
 

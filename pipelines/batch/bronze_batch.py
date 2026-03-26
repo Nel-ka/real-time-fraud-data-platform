@@ -1,5 +1,6 @@
 # Databricks notebook source
-df = spark.read.json("/Volumes/workspace/default/stream/transactions_0.json")
+BASE_PATH = "/Volumes/workspace/default"
+df = spark.read.json(f"{BASE_PATH}/stream/transactions_0.json")
 
 # COMMAND ----------
 
