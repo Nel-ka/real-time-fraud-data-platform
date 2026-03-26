@@ -2,6 +2,10 @@ resources:
   jobs:
     streaming_project:
       name: streaming_project
+      schedule:
+        quartz_cron_expression: 28 * * * * ?
+        timezone_id: Asia/Calcutta
+        pause_status: PAUSED
 
       tasks:
         - task_key: bronze_load
