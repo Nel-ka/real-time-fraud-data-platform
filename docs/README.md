@@ -1,1 +1,0 @@
-This folder contains architecture diagrams and design explanations for the fraud streaming platform.
