@@ -10,6 +10,9 @@ It simulates a real-world payment system where transaction data is ingested, pro
 
 ## Architecture
 
+![Architecture](./docs/architecture.png)
+
+
 Kafka (simulated) → File Landing → Bronze → Silver → Gold
 
 * **Bronze**: Raw ingestion (append-only)
